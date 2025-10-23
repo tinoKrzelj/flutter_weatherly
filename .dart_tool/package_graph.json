@@ -62,7 +62,8 @@
       "version": "0.0.1",
       "dependencies": [
         "build_config",
-        "flutter"
+        "flutter",
+        "go_router"
       ]
     },
     {
