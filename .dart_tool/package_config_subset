@@ -130,6 +130,10 @@ weatherly_flutter
 3.8
 file:///Users/tino.krzelj/Developer/personal/weatherly_flutter/
 file:///Users/tino.krzelj/Developer/personal/weatherly_flutter/lib/
+forecast_current_location
+3.8
+file:///Users/tino.krzelj/Developer/personal/weatherly_flutter/features/forecast_current_location/
+file:///Users/tino.krzelj/Developer/personal/weatherly_flutter/features/forecast_current_location/lib/
 build_config
 3.8
 file:///Users/tino.krzelj/Developer/personal/weatherly_flutter/packages/build_config/

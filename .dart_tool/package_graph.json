@@ -12,6 +12,7 @@
         "flutter",
         "flutter_bloc",
         "flutter_localizations",
+        "forecast_current_location",
         "get_it",
         "go_router",
         "intl"
@@ -57,6 +58,14 @@
       ]
     },
     {
+      "name": "forecast_current_location",
+      "version": "0.0.1",
+      "dependencies": [
+        "build_config",
+        "flutter"
+      ]
+    },
+    {
       "name": "build_config",
       "version": "0.0.1",
       "dependencies": [
@@ -93,6 +102,15 @@
       ]
     },
     {
+      "name": "intl",
+      "version": "0.20.2",
+      "dependencies": [
+        "clock",
+        "meta",
+        "path"
+      ]
+    },
+    {
       "name": "flutter_localizations",
       "version": "0.0.0",
       "dependencies": [
@@ -105,15 +123,6 @@
         "meta",
         "path",
         "vector_math"
-      ]
-    },
-    {
-      "name": "intl",
-      "version": "0.20.2",
-      "dependencies": [
-        "clock",
-        "meta",
-        "path"
       ]
     },
     {

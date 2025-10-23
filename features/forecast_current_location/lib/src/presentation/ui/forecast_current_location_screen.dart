@@ -1,14 +1,16 @@
 import 'package:build_config/build_config.dart';
 import 'package:flutter/material.dart';
 
-class HomePage extends StatefulWidget {
-  const HomePage({super.key});
+class ForecastCurrentLocationScreen extends StatefulWidget {
+  const ForecastCurrentLocationScreen({super.key});
 
   @override
-  State<HomePage> createState() => _HomePageState();
+  State<ForecastCurrentLocationScreen> createState() =>
+      _ForecastCurrentLocationScreenPageState();
 }
 
-class _HomePageState extends State<HomePage> {
+class _ForecastCurrentLocationScreenPageState
+    extends State<ForecastCurrentLocationScreen> {
   @override
   Widget build(BuildContext context) {
     BuildConfig buildConfig = BuildConfigFactory.create();

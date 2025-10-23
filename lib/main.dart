@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:weatherly_flutter/src/home_page.dart';
+import 'package:forecast_current_location/forecast_current_location.dart';
 
 void main() {
   runApp(const WeatherlyApp());
@@ -11,6 +11,6 @@ class WeatherlyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(home: HomePage());
+    return MaterialApp(home: ForecastCurrentLocationScreen());
   }
 }

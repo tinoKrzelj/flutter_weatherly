@@ -92,6 +92,12 @@
       "languageVersion": "3.7"
     },
     {
+      "name": "forecast_current_location",
+      "rootUri": "../features/forecast_current_location",
+      "packageUri": "lib/",
+      "languageVersion": "3.8"
+    },
+    {
       "name": "get_it",
       "rootUri": "file:///Users/tino.krzelj/.pub-cache/hosted/pub.dev/get_it-8.2.0",
       "packageUri": "lib/",
