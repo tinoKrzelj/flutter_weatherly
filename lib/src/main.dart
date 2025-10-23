@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:weatherly_flutter/home_page.dart';
+import 'package:weatherly_flutter/src/home_page.dart';
 
 void main() {
   runApp(const WeatherlyApp());

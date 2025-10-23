@@ -14,6 +14,12 @@
       "languageVersion": "3.1"
     },
     {
+      "name": "build_config",
+      "rootUri": "../packages/build_config",
+      "packageUri": "lib/",
+      "languageVersion": "3.8"
+    },
+    {
       "name": "characters",
       "rootUri": "file:///Users/tino.krzelj/.pub-cache/hosted/pub.dev/characters-1.4.0",
       "packageUri": "lib/",
