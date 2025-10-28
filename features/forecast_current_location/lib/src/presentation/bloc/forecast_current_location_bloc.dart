@@ -1,8 +1,11 @@
 import 'dart:async';
 
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:forecast_current_location/src/domain/entity/forecast_city.dart';
+import 'package:forecast_current_location/src/factory/flutter_current_location_factory.dart';
 import 'package:forecast_current_location/src/presentation/bloc/forecast_current_location_state.dart';
 
+import '../../domain/forecast_current_location_repository.dart';
 import 'forecast_current_location_events.dart';
 
 abstract class ForecastCurrentLocationBloc
@@ -28,17 +31,19 @@ class ForecastCurrentLocationBlocImpl extends ForecastCurrentLocationBloc {
     emit(ForecastCurrentLocationLoadedState());
   }
 
-  FutureOr<void> _handleForecastCurrentLocationLoadedEvent(
+  void _handleForecastCurrentLocationLoadedEvent(
     ForecastCurrentLocationLoadedEvent event,
     Emitter<ForecastCurrentLocationState> emit,
-  ) {
-    print('Tino loaded');
-  }
+  ) {}
 
-  FutureOr<void> _handleForecastCurrentLocationButtonPressedEvent(
+  Future<void> _handleForecastCurrentLocationButtonPressedEvent(
     ForecastCurrentLocationButtonPressedEvent event,
     Emitter<ForecastCurrentLocationState> emit,
-  ) {
-    emit(ForecastCurrentLocationErrorState(message: 'Ovo ne radi jbg'));
+  ) async {
+    final ForecastCurrentLocationRepository repo =
+        ForecastCurrentLocationFactory.create();
+    final value = await repo.getCurrentForecastForCity(city: ForecastCity());
+    // emit(ForecastCurrentLocationLoadedState());
+    emit(ForecastCurrentLocationErrorState(message: 'Temp is ${value.temperature}'));
   }
 }
