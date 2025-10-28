@@ -8,14 +8,17 @@ import '../domain/forecast_current_location_repository.dart';
 
 class ForecastCurrentLocationRepositoryImpl
     implements ForecastCurrentLocationRepository {
-  // TODO: Inject data source
-  ForecastCurrentLocationDataSource remoteDataSource =
-      ForecastCurrentLocationRemoteDataSource();
+  final ForecastCurrentLocationDataSource _remoteDataSource;
+
+  ForecastCurrentLocationRepositoryImpl({
+    ForecastCurrentLocationDataSource? remoteDataSource,
+  }) : _remoteDataSource =
+           remoteDataSource ?? ForecastCurrentLocationRemoteDataSource();
 
   @override
   Future<ForecastWeatherInfo> getCurrentForecastForCity({
     required ForecastCity city,
   }) async {
-    return await remoteDataSource.getCurrentForecastForCity(city: city);
+    return await _remoteDataSource.getCurrentForecastForCity(city: city);
   }
 }

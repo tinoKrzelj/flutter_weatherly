@@ -10,6 +10,13 @@ class ForecastCurrentLocationRemoteDataSource
   Future<ForecastWeatherInfo> getCurrentForecastForCity({
     required ForecastCity city,
   }) async {
-    return ForecastWeatherInfo(temperature: '40');
+    return ForecastWeatherInfo(
+      temperature: 1.0,
+      minTemperature: 1.0,
+      maxTemperature: 1.0,
+      feelsLikeTemperature: 1.0,
+      pressure: 1.0,
+      humidity: 1.0,
+    );
   }
 }

@@ -41,9 +41,13 @@ class ForecastCurrentLocationBlocImpl extends ForecastCurrentLocationBloc {
     Emitter<ForecastCurrentLocationState> emit,
   ) async {
     final ForecastCurrentLocationRepository repo =
-        ForecastCurrentLocationFactory.create();
+        ForecastCurrentLocationFactory.createRepository();
     final value = await repo.getCurrentForecastForCity(city: ForecastCity());
     // emit(ForecastCurrentLocationLoadedState());
-    emit(ForecastCurrentLocationErrorState(message: 'Temp is ${value.temperature}'));
+    emit(
+      ForecastCurrentLocationErrorState(
+        message: 'Temp is ${value.temperature}',
+      ),
+    );
   }
 }
