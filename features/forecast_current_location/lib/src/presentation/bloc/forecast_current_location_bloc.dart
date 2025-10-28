@@ -5,7 +5,7 @@ import 'package:forecast_current_location/src/domain/entity/forecast_city.dart';
 import 'package:forecast_current_location/src/factory/flutter_current_location_factory.dart';
 import 'package:forecast_current_location/src/presentation/bloc/forecast_current_location_state.dart';
 
-import '../../domain/forecast_current_location_repository.dart';
+import '../../domain/repository/forecast_current_location_repository.dart';
 import 'forecast_current_location_events.dart';
 
 abstract class ForecastCurrentLocationBloc

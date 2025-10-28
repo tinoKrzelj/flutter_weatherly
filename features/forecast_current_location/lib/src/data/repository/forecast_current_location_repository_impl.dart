@@ -4,7 +4,7 @@ import 'package:forecast_current_location/src/domain/entity/forecast_city.dart';
 
 import 'package:forecast_current_location/src/domain/entity/forecast_weather_info.dart';
 
-import '../domain/forecast_current_location_repository.dart';
+import '../../domain/repository/forecast_current_location_repository.dart';
 
 class ForecastCurrentLocationRepositoryImpl
     implements ForecastCurrentLocationRepository {
